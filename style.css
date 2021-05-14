@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Arial;
+    color: hsl(0, 0%, 0%);
+    font-size: 14px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    width: 85%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+h2 {
+    opacity: 50%;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+#header-left {
+    float: left;
+}
+
+.dark-mode-toggle {
+    float: right;
+}
+
+.card {
+    position: relative;
+    background-color: hsl(225, 100%, 90%);
+    width: 225px;
+    min-height: 125px;
+    margin: 15px;
+    border-radius: 10px;
+    float: left;
+}
+
+.card-top-border {
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    height: 5px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin: 20px;
+}
+
+.big-stat {
+    font-weight: bold;
+    margin: 10px;
+}
+
+#follower-and-sub-cards {
+    margin: 50px 0;
+}
+
+#follower-and-sub-cards .card {
+    text-align: center;
+}
+
+#follower-and-sub-cards .big-stat {
+    font-size: 40px;
+}
+
+.wide-letter-space {
+    letter-spacing: .5em;
+    opacity: 50%;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.up-trend {
+    font-weight: bold;
+    margin: 5px;
+    color: hsl(163, 72%, 41%);
+}
+
+.down-trend {
+    font-weight: bold;
+    margin: 5px;
+    color: hsl(356, 69%, 56%);
+}

@@ -3,85 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
+  <title>Frontend Mentor | Theme Switcher</title>
+
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div id="header-left"> 
+        <h1>Social Media Dashboard</h1>
+        <h2>Total Followers: 23,004</h2>
+      </div> 
+      <div class="dark-mode-toggle">dark mode toggle
+        <label for="theme-switch">toggle</label>
+        <input type="checkbox" id="theme-switch" value="on">
+      </div>
+      <div class="clear"></div>
+    </header>
+   
+    <div id="follower-and-sub-cards">
+      <div class="card">
+        <div class="card-top-border"></div>
+        <h2>@nathanf</h2>
+        <div class="big-stat">1987</div>
+        <div class="wide-letter-space">Followers</div>
+        <div class="up-trend">12 Today</div>
+      </div>
+      
+      <div class="card">
+        <div class="card-top-border"></div>
+        <h2>@nathanf</h2>
+        <div class="big-stat">1044</div>
+        <div class="wide-letter-space">Followers</div>
+        <div class="up-trend">99 Today</div>
+      </div>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+      <div class="card">
+        <div class="card-top-border"></div>
+        <h2>@realnathanf</h2>
+        <div class="big-stat">11k</div>
+        <div class="wide-letter-space">Followers</div>
+        <div class="up-trend">1099 Today</div>
+      </div>
 
-  Dark Mode
+      <div class="card">
+        <div class="card-top-border"></div>
+        <H2>Nathan F.</H2>
+        <div class="big-stat">8239</div>
+        <div class="wide-letter-space">Followers</div>
+        <div class="down-trend">144 Today</div>
+      </div>
 
-  
+      <div class="clear"></div>
+    </div><!--end of follower-and-sub-cards-->
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <div id="Overview">
+      <h2>Overview - Today</h2>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="card">
+        <div class="float-left">
+          <h2>Page Views</h2>
+          <div class="big-stat">87</div>
+        </div>
+        <div class="float-right">
+          <div class="up-trend">3%</div>
+        </div>
+        <div class="clear"></div>
+      </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      <div class="card">
+        <h2>Likes</h2>
+        <div class="big-stat">52</div>
+        <div class="down-trend">2%</div>
+      </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+      <div class="card">
+        <h2>Likes</h2>
+        <div class="big-stat">5462</div>
+        <div class="up-trend">2257%</div>
+      </div>
 
+      <div class="card">
+        <h2>Profile Views</h2>
+        <div class="big-stat">52k</div>
+        <div class="up-trend">1375%</div>
+      </div>
 
+      <div class="card">
+        <h2>Retweets</h2>
+        <div class="big-stat">117</div>
+        <div class="up-trend">303%</div>
+      </div>
 
-  Overview - Today
+      <div class="card">
+        <h2>Likes</h2>
+        <div class="big-stat">507</div>
+        <div class="up-trend">553%</div>
+      </div>
 
-  Page Views
-  87
-  3%
+      <div class="card">
+        <h2>Likes</h2>
+        <div class="big-stat">107</div>
+        <div class="down-trend">19%</div>
+      </div>
 
-  Likes
-  52
-  2%
+      <div class="card">
+        <h2>Total Views</h2>
+        <div class="big-stat">1407</div>
+        <div class="down-trend">12%</div>
+      </div>
 
-  Likes
-  5462
-  2257%
+      <div class="clear"></div>
+    </div><!--End of Overview-->
 
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by Eleanor Johnson.
+    </footer>
+  </div> <!--container end-->
 </body>
 </html>
