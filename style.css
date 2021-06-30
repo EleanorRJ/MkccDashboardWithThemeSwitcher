@@ -1,3 +1,4 @@
+/*General and utilities (excludes cards)*/
 * {
     padding: 0;
     margin: 0;    
@@ -6,9 +7,14 @@
 
 body {
     font-family: Inter, Arial;
-    color: hsl(0, 0%, 0%);
+    /*color: hsl(0, 0%, 0%);*/
     font-size: 14px;
-    background-color: hsl(225, 100%, 98%);
+    /*background-color: hsl(225, 100%, 98%);*/
+}
+
+body.dark {
+    color:  hsl(0, 0%, 100%);
+    background-color:  hsl(230, 17%, 14%);
 }
 
 .container {
@@ -29,6 +35,7 @@ body {
     clear: both;
 }
 
+/*Top of page*/
 h1 {
     font-size: 25px;
     margin: 10px 0;
@@ -44,10 +51,50 @@ h2 {
     float: left;
 }
 
+/*Theme toggle*/
 .dark-mode-toggle {
     float: right;
 }
 
+.dark-mode-toggle input {
+    /*visibility: hidden;*/
+}
+
+#toggle-text {
+    display: inline;
+    padding-right: 1em;
+}
+
+#toggle-bar {
+    background-color: #000;
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    display: inline;
+    transition: 0.5s;
+}
+
+#toggle-circle {
+    background-color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: 0.5s;
+}
+
+#checkbox:checked + label #toggle-circle {
+    transform: translateX(20px);
+}
+
+#checkbox:checked + label #toggle-bar {
+    background-color: blue;
+}
+
+/*Cards*/
 .card {
     position: relative;
     background-color: hsl(225, 100%, 90%);

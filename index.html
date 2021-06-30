@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link href="style.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   
   <title>Frontend Mentor | Theme Switcher</title>
 
@@ -18,15 +18,20 @@
         <h1>Social Media Dashboard</h1>
         <h2>Total Followers: 23,004</h2>
       </div> 
-      <div class="dark-mode-toggle">dark mode toggle
-        <label for="theme-switch">toggle</label>
-        <input type="checkbox" id="theme-switch" value="on">
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="checkbox" value="checked">
+        <label for="checkbox" id="theme-switch-label"> <div id="toggle-text">Dark Mode</div> 
+          <div id="toggle-bar">
+            <div id="toggle-circle"></div>
+          </div>
+        </label>
+        
       </div>
       <div class="clear"></div>
     </header>
    
     <div id="follower-and-sub-cards">
-      <div class="card">
+      <div class="card" id="card-1">
         <div class="card-top-border"></div>
         <h2>@nathanf</h2>
         <div class="big-stat">1987</div>
